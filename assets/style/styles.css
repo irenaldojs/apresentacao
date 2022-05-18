@@ -3,10 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     color: #a09038;
-}
-
-ul {
-    list-style: none;
+    font-family: 'Poppins', sans-serif;
 }
 
 a {
@@ -17,4 +14,159 @@ body {
     background-image: url('../img/pexels-francesco-ungaro-998641.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+header {
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 800px;
+    border-bottom: 2px solid #c09717;
+}
+
+header img {
+    max-width: 150px;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 700;
+}
+
+header ul li {
+    padding: 10px;
+}
+
+header ul li a {
+    transition: 600ms;
+}
+
+header ul li a:hover {
+    color: #c0a717;
+    text-decoration: underline;
+}
+
+.container {
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    max-width: 800px;
+    margin: 10px auto;
+}
+
+.container .name h1 {
+    font-size: 50px;
+}
+
+.container .name h5 {
+    font-size: 25px;
+}
+
+#arrow {
+    font-size: 35px;
+    cursor: pointer;
+    animation: blink 1s steps(5, start) infinite;
+}
+
+@keyframes blink {
+    to {
+        visibility: hidden;
+    }
+}
+
+#animation {
+    transition: 300ms;
+}
+
+.rotate {
+    transform: rotate(180deg);
+    transition: 300ms;
+}
+
+.active {
+    display: block !important;
+}
+
+#about {
+    padding-bottom: 20px;
+    text-indent: 50px;
+    text-align: justify;
+}
+
+.form {
+    align-items: center;
+}
+
+.form p {
+    font-style: italic;
+}
+
+.form input {
+    width: 60%;
+    padding: 5px 10px;
+    text-align: center;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.form button {
+    width: 20%;
+    padding: 5px 10px;
+    background: linear-gradient(to right, #c09717 50%, #9c551b 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    background-color: #c09717;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+    margin-left: -4px;
+    cursor: pointer;
+    transition: all 300ms ease-out;
+
+}
+
+.form button:hover {
+    background-position: left bottom;
+}
+
+@media only screen and (max-width: 480px) {
+
+    header ul {
+        display: flex;
+        list-style: none;
+        font-size: 15px;
+        font-style: italic;
+        font-weight: 700;
+    }
+
+
+    header ul li {
+        padding: 5px;
+    }
+
+    .container .name h1 {
+        font-size: 30px;
+    }
+
+    .container .name h5 {
+        font-size: 15px;
+    }
+
+    #about {
+        padding-bottom: 20px;
+        text-indent: 50px;
+        text-align: justify;
+    }
+
+    .form input {
+        width: 70%;
+    }
+    .form button {
+        width: 20%;
+    }
 }
