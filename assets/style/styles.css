@@ -5,15 +5,18 @@
     color: #a09038;
     font-family: 'Poppins', sans-serif;
 }
-
+html {
+    height: 100%;
+}
 a {
     text-decoration: none;
 }
 
 body {
     background-image: url('../img/pexels-francesco-ungaro-998641.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-repeat:repeat-y;
+    background-size:cover;
+    height: 100%;
 }
 
 header {
@@ -135,7 +138,6 @@ header ul li a:hover {
 }
 
 @media only screen and (max-width: 480px) {
-
     header ul {
         display: flex;
         list-style: none;
@@ -147,6 +149,10 @@ header ul li a:hover {
 
     header ul li {
         padding: 5px;
+    }
+
+    .container {
+        min-height: 600px;
     }
 
     .container .name h1 {
